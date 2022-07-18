@@ -1,0 +1,28 @@
+318,1,2021-02-28,123,1000,APROBADO,EMITIDO
+342,2,2010-01-14,124,2000,PENDIENTE,DEPOSITADO
+323,3,2011-07-23,123,1000,APROBADO,DEPOSITADO
+352,4,2018-05-04,124,2000,PENDIENTE,EMITIDO
+341,5,2021-09-22,123,1000,RECHAZADO,EMITIDO
+389,6,2020-06-04,124,2000,PENDIENTE,DEPOSITADO
+354,7,2019-12-28,123,1000,RECHAZADO,DEPOSITADO
+372,8,2022-05-04,124,2000,PENDIENTE,EMITIDO
+
+NroCheque: Número de cheque, este debe ser único por cuenta.
+CodigoBanco: Código numérico del banco, entre 1 y 100.
+CodigoScurusal: Código numérico de la sucursal del banco va entre 1 y 300.
+NumeroCuentaOrigen: Cuenta de origen del cheque.
+NumeroCuentaDestino: Cuenta donde se cobra el cheque.
+Valor: float con el valor del cheque.
+FechaOrigen: Fecha de emisión: (En timestamp)
+FechaPago: Fecha de pago o cobro del cheque (En timestamp)
+DNI: String con DNI del cliente donde se permite identificarlo
+Estado: Puede tener 3 valores pendiente, aprobado o rechazado.
+tIPO: DEPOSITADO, EMITIDO
+
+PRUEBAS:
+1235,56,096,1000,1456,4568.35,2021-02-01,2021-02-05,'4510694',APROBADO,DEPOSITADO
+1236,96,059,1000,5456,12568.95,2019-04-09,2019-04-12,'4318694',RECHAZADO,EMITIDO
+1237,58,226,2000,5000,4568.76,2018-03-21,2018-03-23,'4114694',APROBADO,DEPOSITADO
+1238,82,116,2000,2456,55568.05,2022-01-12,2022-01-13,'3512604',RECHAZADO,EMITIDO
+1239,09,103,1000,2456,8468.35,2020-06-28,2020-07-30,'3512604',PENDIENTE,EMITIDO
+1240,13,072,2000,6456,5368.15,2021-11-28,2021-11-29,'3512604',RECHAZADO,EMITIDO

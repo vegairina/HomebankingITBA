@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(img/background_login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor_principal{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    display: flex;
+
+}
+
+.contenedor_registro_gastos{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.contenedor_registro_gastos form{
+    width: 100%;
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+
+.contenedor_registro_gastos form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor_registro_gastos form .boton{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46a2fd;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario_gastos{
+    opacity: 1;
+    display: block;
+}
+
+/*  AGREGADO  */
+
+.contenedor_calculo{   
+display: flex;
+justify-content: flex-end;
+align-items: center;
+width: 100%;
+max-width: 380px;
+position: relative;
+margin-left: 10p;
+}
+
+.contenedor_calculo form{
+    width: 100%;
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.contenedor_calculo form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.formulario_calculos{
+    opacity: 1;
+    display: block;
+}
+
+.formulario_calculos .lista{
+    list-style: none;
+}
+
+.formulario_calculos .lista li{
+    border-bottom: 1px solid #B6B6B6;
+    text-align: center;
+}
+
+.formulario_calculos .lista li a {
+    color: #212121;
+    display: block;
+    padding: 2px 0px;
+    text-decoration: none;
+}
+
+.formulario_calculos p{
+    border-bottom: 1px solid #B6B6B6;
+    text-align: center;
+}
+
+.formulario_calculos p::before{ content:"$"; padding-right: 5px; }
+
+
+   /* ---- RESPONSIVE ---- */
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    /* formulario */
+    .contenedor_registro_gastos{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor_registro_gastos form{
+        position:relative
+    }
+
+}

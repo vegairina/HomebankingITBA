@@ -1,0 +1,102 @@
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  color: #fff;
+  background-color: rgb(2, 2, 45);
+  height: 70%;
+}
+
+.footer > * {
+  flex: 1 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.l-footer {
+  margin-right: 0.3em;
+  margin-bottom:0;
+  list-style: none;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 15px;
+  
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0%;
+  
+}
+
+.footer li {
+  line-height: 3em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.r-footer {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.r-footer > * {
+  flex: 1 50%;
+  margin-right: 0;
+  list-style: none;
+}
+
+ul.box li {
+  display: inline;
+  margin-right: 25px;
+  list-style: none;
+}
+
+.box a {
+  color: #999;
+  list-style: none;
+}
+
+.h-box {
+  column-count: 1;
+  column-gap: 1.25em;
+}
+
+.b-footer {
+  text-align: center;
+  color: #999;
+  padding-top: 10px;
+}
+
+.l-footer {
+  column-count: 1;
+}
+
+.l-footer p {
+  padding-right: 10%;
+  color: #999;
+}
+
+@media screen and (min-width: 750px) {
+  .r-footer > * {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  .features {
+    flex-grow: 2;
+    list-style: none;flex-wrap: wrap;
+  }
+
+  .l-footer {
+    flex: 1 0px;flex-wrap: wrap;
+  }
+
+  .r-footer {
+    flex: 2 0px;flex-wrap: wrap;
+  }
+}

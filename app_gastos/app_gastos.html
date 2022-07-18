@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app_gastos.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor_principal">
+
+            <!-- Formulario registro de gastos -->
+            <div class="contenedor_registro_gastos">
+                <form action="" class="formulario_gastos">
+                    <h2>Ingrese los datos:</h2>
+                    <input type="text" id="nombreInput" placeholder="Nombre Completo">
+                    <input type="number" id="montoInput" placeholder="Monto">
+                    <input type="button" class="boton" id="btn-agregar" value="Ingresar">
+                </form>
+            </div>
+
+            <div class="contenedor_calculo">
+                <form action="" class="formulario_calculos">
+                    <h2>Gastos:</h2>
+                    <ul class="lista" id="lista">
+                    </ul>
+                    <div>
+                        <h3>Total: </h3>
+                        <p id="total"></p>
+                    </div>
+                    <div>
+                        <h3>Promedio: </h3>
+                        <p class="promedio" id="promedio"> </p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <script src="app_gastos.js"></script>
+</body>
+</html>
