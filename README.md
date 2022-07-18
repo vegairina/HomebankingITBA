@@ -1,2 +1,2 @@
 ITBANK - Homebanking
-website ->  https://github.com/vegairina/Homebanking-ITBA
+website ->  https://github.com/vegairina/HomebankingITBA
